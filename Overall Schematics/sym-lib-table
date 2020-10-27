@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CustomLibrary)(type Legacy)(uri "${KIPRJMOD}/Custom Symbols/CustomLibrary.lib")(options "")(descr ""))
+  (lib (name Teensy)(type Legacy)(uri "${KIPRJMOD}/Custom Symbols/teensy.lib")(options "")(descr ""))
+)
