@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# StepperMotorDriver
+# 36v4SMD
 #
-DEF StepperMotorDriver U 0 40 Y Y 1 F N
+DEF 36v4SMD U 0 40 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
-F1 "StepperMotorDriver" 0 0 50 H V C CNN
+F1 "36v4SMD" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

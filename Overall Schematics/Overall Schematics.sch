@@ -68,17 +68,6 @@ F 3 "" H 6400 5800 50  0001 C CNN
 	1    6400 5800
 	1    0    0    -1  
 $EndComp
-$Comp
-L CustomLibrary:StepperMotorDriver U?
-U 1 1 5F98ED02
-P 5900 550
-F 0 "U?" H 5900 613 50  0000 C CNN
-F 1 "StepperMotorDriver" H 5900 522 50  0000 C CNN
-F 2 "" H 5900 550 50  0001 C CNN
-F 3 "" H 5900 550 50  0001 C CNN
-	1    5900 550 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3700 850  3700 1350
 Wire Wire Line
@@ -152,7 +141,7 @@ L CustomLibrary:StepperMotorDriver U?
 U 1 1 5F99149B
 P 5950 1650
 F 0 "U?" H 5950 1713 50  0000 C CNN
-F 1 "StepperMotorDriver" H 5950 1622 50  0000 C CNN
+F 1 "36v4SMD" H 5950 1622 50  0000 C CNN
 F 2 "" H 5950 1650 50  0001 C CNN
 F 3 "" H 5950 1650 50  0001 C CNN
 	1    5950 1650
@@ -315,15 +304,11 @@ Wire Wire Line
 Wire Wire Line
 	7050 2200 7150 2200
 Wire Wire Line
-	6400 1050 6650 1050
-Wire Wire Line
 	6650 1050 6650 600 
 Wire Wire Line
 	6650 600  7350 600 
 Wire Wire Line
 	7350 600  7350 750 
-Wire Wire Line
-	6400 1100 6750 1100
 Wire Wire Line
 	6750 1100 6750 650 
 Wire Wire Line
@@ -331,28 +316,13 @@ Wire Wire Line
 Wire Wire Line
 	7550 650  7550 750 
 Wire Wire Line
-	6400 1150 6800 1150
-Wire Wire Line
 	6800 1150 6800 950 
 Wire Wire Line
 	6800 950  7150 950 
 Wire Wire Line
-	6400 1200 7050 1200
-Wire Wire Line
 	7050 1200 7050 1150
 Wire Wire Line
 	7050 1150 7150 1150
-$Comp
-L power:+8V #PWR?
-U 1 1 5F9BBF7D
-P 6450 800
-F 0 "#PWR?" H 6450 650 50  0001 C CNN
-F 1 "+8V" H 6465 973 50  0000 C CNN
-F 2 "" H 6450 800 50  0001 C CNN
-F 3 "" H 6450 800 50  0001 C CNN
-	1    6450 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6400 900  6450 900 
 Wire Wire Line
@@ -362,17 +332,6 @@ Wire Wire Line
 Connection ~ 6450 850 
 Wire Wire Line
 	6450 850  6450 800 
-$Comp
-L power:+8V #PWR?
-U 1 1 5F9C2D1E
-P 6500 1850
-F 0 "#PWR?" H 6500 1700 50  0001 C CNN
-F 1 "+8V" H 6515 2023 50  0000 C CNN
-F 2 "" H 6500 1850 50  0001 C CNN
-F 3 "" H 6500 1850 50  0001 C CNN
-	1    6500 1850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6450 2000 6500 2000
 Wire Wire Line
@@ -384,50 +343,6 @@ Wire Wire Line
 	6500 1950 6500 1850
 Wire Wire Line
 	6450 3250 6600 3250
-$Comp
-L power:+6V #PWR?
-U 1 1 5F9D338A
-P 6600 3250
-F 0 "#PWR?" H 6600 3100 50  0001 C CNN
-F 1 "+6V" V 6615 3378 50  0000 L CNN
-F 2 "" H 6600 3250 50  0001 C CNN
-F 3 "" H 6600 3250 50  0001 C CNN
-	1    6600 3250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+6V #PWR?
-U 1 1 5F9D863A
-P 6600 3950
-F 0 "#PWR?" H 6600 3800 50  0001 C CNN
-F 1 "+6V" V 6615 4078 50  0000 L CNN
-F 2 "" H 6600 3950 50  0001 C CNN
-F 3 "" H 6600 3950 50  0001 C CNN
-	1    6600 3950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+6V #PWR?
-U 1 1 5F9DB48D
-P 6600 4750
-F 0 "#PWR?" H 6600 4600 50  0001 C CNN
-F 1 "+6V" V 6615 4878 50  0000 L CNN
-F 2 "" H 6600 4750 50  0001 C CNN
-F 3 "" H 6600 4750 50  0001 C CNN
-	1    6600 4750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+6V #PWR?
-U 1 1 5F9DE57B
-P 6600 5600
-F 0 "#PWR?" H 6600 5450 50  0001 C CNN
-F 1 "+6V" V 6615 5728 50  0000 L CNN
-F 2 "" H 6600 5600 50  0001 C CNN
-F 3 "" H 6600 5600 50  0001 C CNN
-	1    6600 5600
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6450 3950 6600 3950
 Wire Wire Line
@@ -519,10 +434,6 @@ Wire Wire Line
 Connection ~ 6500 2050
 Wire Wire Line
 	6500 2050 6550 2050
-Wire Wire Line
-	6400 950  6500 950 
-Wire Wire Line
-	6400 1000 6500 1000
 Wire Wire Line
 	6500 1000 6500 950 
 Connection ~ 6500 950 
@@ -664,17 +575,6 @@ F 3 "" H 3550 1150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 1150 3550 1150
-$Comp
-L power:+5V #PWR?
-U 1 1 5FACD3DC
-P 3550 1000
-F 0 "#PWR?" H 3550 850 50  0001 C CNN
-F 1 "+5V" H 3565 1173 50  0000 C CNN
-F 2 "" H 3550 1000 50  0001 C CNN
-F 3 "" H 3550 1000 50  0001 C CNN
-	1    3550 1000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 1050 3550 1050
 Wire Wire Line
@@ -822,4 +722,108 @@ Wire Wire Line
 	900  5450 900  3050
 Wire Wire Line
 	900  3050 1250 3050
+$Comp
+L power:+24V #PWR?
+U 1 1 5F9D807E
+P 3500 850
+F 0 "#PWR?" H 3500 700 50  0001 C CNN
+F 1 "+24V" H 3515 1023 50  0000 C CNN
+F 2 "" H 3500 850 50  0001 C CNN
+F 3 "" H 3500 850 50  0001 C CNN
+	1    3500 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 900  3500 900 
+Wire Wire Line
+	3500 900  3500 850 
+Wire Wire Line
+	6400 1200 7050 1200
+Wire Wire Line
+	6400 1150 6800 1150
+Wire Wire Line
+	6400 1100 6750 1100
+Wire Wire Line
+	6400 1050 6650 1050
+Wire Wire Line
+	6400 1000 6500 1000
+Wire Wire Line
+	6400 950  6500 950 
+$Comp
+L CustomLibrary:StepperMotorDriver U?
+U 1 1 5F98ED02
+P 5900 550
+F 0 "U?" H 5900 613 50  0000 C CNN
+F 1 "36v4SMD" H 5900 522 50  0000 C CNN
+F 2 "" H 5900 550 50  0001 C CNN
+F 3 "" H 5900 550 50  0001 C CNN
+	1    5900 550 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA0453E
+P 6450 800
+F 0 "#PWR?" H 6450 650 50  0001 C CNN
+F 1 "+24V" H 6465 973 50  0000 C CNN
+F 2 "" H 6450 800 50  0001 C CNN
+F 3 "" H 6450 800 50  0001 C CNN
+	1    6450 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA11C95
+P 6500 1850
+F 0 "#PWR?" H 6500 1700 50  0001 C CNN
+F 1 "+24V" H 6515 2023 50  0000 C CNN
+F 2 "" H 6500 1850 50  0001 C CNN
+F 3 "" H 6500 1850 50  0001 C CNN
+	1    6500 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA1F45E
+P 6600 3250
+F 0 "#PWR?" H 6600 3100 50  0001 C CNN
+F 1 "+24V" V 6615 3378 50  0000 L CNN
+F 2 "" H 6600 3250 50  0001 C CNN
+F 3 "" H 6600 3250 50  0001 C CNN
+	1    6600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA54773
+P 6600 4750
+F 0 "#PWR?" H 6600 4600 50  0001 C CNN
+F 1 "+24V" V 6615 4878 50  0000 L CNN
+F 2 "" H 6600 4750 50  0001 C CNN
+F 3 "" H 6600 4750 50  0001 C CNN
+	1    6600 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA6150A
+P 6600 3950
+F 0 "#PWR?" H 6600 3800 50  0001 C CNN
+F 1 "+24V" V 6615 4078 50  0000 L CNN
+F 2 "" H 6600 3950 50  0001 C CNN
+F 3 "" H 6600 3950 50  0001 C CNN
+	1    6600 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 5FA7B478
+P 6600 5600
+F 0 "#PWR?" H 6600 5450 50  0001 C CNN
+F 1 "+24V" V 6615 5728 50  0000 L CNN
+F 2 "" H 6600 5600 50  0001 C CNN
+F 3 "" H 6600 5600 50  0001 C CNN
+	1    6600 5600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
