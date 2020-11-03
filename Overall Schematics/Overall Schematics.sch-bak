@@ -46,48 +46,6 @@ F 3 "" H 6400 5800 50  0001 C CNN
 	1    6400 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 1150 3800 1150
-Wire Wire Line
-	3800 1150 3800 1550
-Wire Wire Line
-	3800 1550 3450 1550
-Wire Wire Line
-	5400 1200 3850 1200
-Wire Wire Line
-	3850 1200 3850 1650
-Wire Wire Line
-	3850 1650 3450 1650
-Wire Wire Line
-	5300 750  5300 700 
-Wire Wire Line
-	5300 700  5400 700 
-Wire Wire Line
-	5350 1800 5350 1850
-Wire Wire Line
-	3850 1950 3850 1750
-Wire Wire Line
-	3850 1750 3450 1750
-Wire Wire Line
-	3800 2000 3800 1850
-Wire Wire Line
-	3800 1850 3450 1850
-Wire Wire Line
-	3750 2250 3750 1950
-Wire Wire Line
-	3750 1950 3450 1950
-Wire Wire Line
-	5450 2300 3700 2300
-Wire Wire Line
-	3700 2300 3700 2050
-Wire Wire Line
-	3700 2050 3450 2050
-Wire Wire Line
-	5450 2000 3800 2000
-Wire Wire Line
-	5450 1950 3850 1950
-Wire Wire Line
-	5450 1800 5350 1800
 $Comp
 L Overall-Schematics-rescue:StepperMotorDriver-CustomLibrary U?
 U 1 1 5F99149B
@@ -256,25 +214,9 @@ Wire Wire Line
 Wire Wire Line
 	7050 2200 7150 2200
 Wire Wire Line
-	6900 1050 6900 600 
-Wire Wire Line
-	6900 600  7350 600 
-Wire Wire Line
-	7350 600  7350 750 
-Wire Wire Line
-	6950 1100 6950 650 
-Wire Wire Line
-	6950 650  7550 650 
-Wire Wire Line
 	7550 650  7550 750 
 Wire Wire Line
-	7000 1150 7000 950 
-Wire Wire Line
 	7000 950  7150 950 
-Wire Wire Line
-	7050 1200 7050 1150
-Wire Wire Line
-	7050 1150 7150 1150
 Wire Wire Line
 	6400 900  6450 900 
 Wire Wire Line
@@ -301,28 +243,6 @@ Wire Wire Line
 	6450 4750 6600 4750
 Wire Wire Line
 	6450 5600 6600 5600
-$Comp
-L power:GND #PWR?
-U 1 1 5F9EA86C
-P 6550 950
-F 0 "#PWR?" H 6550 700 50  0001 C CNN
-F 1 "GND" V 6555 822 50  0000 R CNN
-F 2 "" H 6550 950 50  0001 C CNN
-F 3 "" H 6550 950 50  0001 C CNN
-	1    6550 950 
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F9FA209
-P 6550 2050
-F 0 "#PWR?" H 6550 1800 50  0001 C CNN
-F 1 "GND" V 6555 1922 50  0000 R CNN
-F 2 "" H 6550 2050 50  0001 C CNN
-F 3 "" H 6550 2050 50  0001 C CNN
-	1    6550 2050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6450 3050 7250 3050
 Wire Wire Line
@@ -333,20 +253,6 @@ Wire Wire Line
 	6450 4650 6600 4650
 Wire Wire Line
 	6450 5500 6600 5500
-Wire Wire Line
-	6450 2050 6500 2050
-Wire Wire Line
-	6450 2100 6500 2100
-Wire Wire Line
-	6500 2100 6500 2050
-Connection ~ 6500 2050
-Wire Wire Line
-	6500 2050 6550 2050
-Wire Wire Line
-	6500 1000 6500 950 
-Connection ~ 6500 950 
-Wire Wire Line
-	6500 950  6550 950 
 $Comp
 L power:GND #PWR?
 U 1 1 5FA290E4
@@ -440,56 +346,6 @@ F 3 "" H 3650 2450 50  0001 C CNN
 	1    3650 2450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5450 2250 3750 2250
-Wire Wire Line
-	3450 2150 5300 2150
-Wire Wire Line
-	5300 2150 5300 2900
-Wire Wire Line
-	5300 2900 5450 2900
-Wire Wire Line
-	3450 2350 5200 2350
-Wire Wire Line
-	5200 2350 5200 3000
-Wire Wire Line
-	5200 3000 5450 3000
-Wire Wire Line
-	3450 2650 5000 2650
-Wire Wire Line
-	5000 2650 5000 3600
-Wire Wire Line
-	5000 3600 5450 3600
-Wire Wire Line
-	3450 2850 4900 2850
-Wire Wire Line
-	4900 2850 4900 3700
-Wire Wire Line
-	4900 3700 5450 3700
-Wire Wire Line
-	3450 3050 4800 3050
-Wire Wire Line
-	4800 3050 4800 4400
-Wire Wire Line
-	4800 4400 5450 4400
-Wire Wire Line
-	3450 3250 4700 3250
-Wire Wire Line
-	4700 3250 4700 4500
-Wire Wire Line
-	4700 4500 5450 4500
-Wire Wire Line
-	5450 5250 1050 5250
-Wire Wire Line
-	1050 5250 1050 3350
-Wire Wire Line
-	1050 3350 1250 3350
-Wire Wire Line
-	5450 5350 950  5350
-Wire Wire Line
-	950  5350 950  3150
-Wire Wire Line
-	950  3150 1250 3150
 $Comp
 L power:+24V #PWR?
 U 1 1 5F9D807E
@@ -505,29 +361,6 @@ Wire Wire Line
 	3450 900  3500 900 
 Wire Wire Line
 	3500 900  3500 850 
-Wire Wire Line
-	6400 1200 7050 1200
-Wire Wire Line
-	6400 1150 7000 1150
-Wire Wire Line
-	6400 1100 6950 1100
-Wire Wire Line
-	6400 1050 6900 1050
-Wire Wire Line
-	6400 1000 6500 1000
-Wire Wire Line
-	6400 950  6500 950 
-$Comp
-L Overall-Schematics-rescue:StepperMotorDriver-CustomLibrary U?
-U 1 1 5F98ED02
-P 5900 550
-F 0 "U?" H 5900 613 50  0000 C CNN
-F 1 "36v4SMD" H 5900 522 50  0000 C CNN
-F 2 "" H 5900 550 50  0001 C CNN
-F 3 "" H 5900 550 50  0001 C CNN
-	1    5900 550 
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+24V #PWR?
 U 1 1 5FA0453E
@@ -740,10 +573,6 @@ F 3 "" H 5000 3200 50  0001 C CNN
 $EndComp
 NoConn ~ 5450 3300
 NoConn ~ 5450 3350
-Wire Wire Line
-	5300 750  5400 750 
-Wire Wire Line
-	5350 1850 5450 1850
 NoConn ~ 5400 950 
 NoConn ~ 5400 1000
 NoConn ~ 5400 1050
@@ -754,6 +583,129 @@ NoConn ~ 5450 2150
 NoConn ~ 5450 2200
 Text GLabel 3450 1350 2    31   Input ~ 0
 STEP_1
-Text GLabel 5400 850  0    31   Input ~ 0
+Text GLabel 5400 850  0    20   Input ~ 0
 STEP_1
+Text GLabel 3450 1450 2    31   Input ~ 0
+DIR_1
+Text GLabel 5400 900  0    20   Input ~ 0
+DIR_1
+$Comp
+L Overall-Schematics-rescue:StepperMotorDriver-CustomLibrary U?
+U 1 1 5F98ED02
+P 5900 550
+F 0 "U?" H 5900 613 50  0000 C CNN
+F 1 "36v4SMD" H 5900 522 50  0000 C CNN
+F 2 "" H 5900 550 50  0001 C CNN
+F 3 "" H 5900 550 50  0001 C CNN
+	1    5900 550 
+	1    0    0    -1  
+$EndComp
+Text GLabel 3450 1550 2    31   Input ~ 0
+SLEEP_1
+Text GLabel 3450 1650 2    31   Input ~ 0
+RESET_1
+Text GLabel 5400 1150 0    20   Input ~ 0
+SLEEP_1
+Text GLabel 5400 1200 0    20   Input ~ 0
+RESET_1
+NoConn ~ 5400 1250
+NoConn ~ 5400 700 
+NoConn ~ 5400 750 
+NoConn ~ 5450 1800
+NoConn ~ 5450 1850
+Text GLabel 3450 1750 2    31   Input ~ 0
+STEP_2
+Text GLabel 3450 1850 2    31   Input ~ 0
+DIR_2
+Text GLabel 3450 1950 2    31   Input ~ 0
+SLEEP_2
+Text GLabel 3450 2050 2    31   Input ~ 0
+RESET_2
+Text GLabel 3450 2150 2    31   Input ~ 0
+INA_1
+Text GLabel 3450 2250 2    31   Input ~ 0
+PWM_1
+Text GLabel 3450 2350 2    31   Input ~ 0
+INB_1
+Text GLabel 3450 2550 2    31   Input ~ 0
+INA_2
+Text GLabel 3450 2650 2    31   Input ~ 0
+PWM_2
+Text GLabel 3450 2750 2    31   Input ~ 0
+INB_2
+Text GLabel 3450 2850 2    31   Input ~ 0
+INA_3
+Text GLabel 3450 2950 2    31   Input ~ 0
+PWM_3
+Text GLabel 3450 3050 2    31   Input ~ 0
+INB_3
+Text GLabel 3450 3150 2    31   Input ~ 0
+INA_4
+Text GLabel 3450 3250 2    31   Input ~ 0
+PWM_4
+Text GLabel 3450 3350 2    31   Input ~ 0
+INB_4
+Text GLabel 5450 1950 0    20   Input ~ 0
+STEP_2
+Text GLabel 5450 2000 0    20   Input ~ 0
+DIR_2
+Text GLabel 5450 2250 0    20   Input ~ 0
+SLEEP_2
+Text GLabel 5450 2300 0    20   Input ~ 0
+RESET_2
+NoConn ~ 5450 2350
+Text GLabel 5450 2900 0    20   Input ~ 0
+INA_1
+Text GLabel 5450 3150 0    20   Input ~ 0
+INB_1
+Text GLabel 5450 3000 0    20   Input ~ 0
+PWM_1
+Text GLabel 5450 3600 0    20   Input ~ 0
+INA_2
+Text GLabel 5450 3700 0    20   Input ~ 0
+PWM_2
+Text GLabel 5450 3850 0    20   Input ~ 0
+INB_2
+Text GLabel 5450 4400 0    20   Input ~ 0
+INA_3
+Text GLabel 5450 4500 0    20   Input ~ 0
+PWM_3
+Text GLabel 5450 4650 0    20   Input ~ 0
+INB_3
+Text GLabel 5450 5250 0    20   Input ~ 0
+INA_4
+Text GLabel 5450 5350 0    20   Input ~ 0
+PWM_4
+Text GLabel 5450 5500 0    20   Input ~ 0
+INB_4
+Text GLabel 6550 2050 2    47   Input ~ 0
+PWR_GND
+NoConn ~ 5750 1450
+NoConn ~ 5800 1450
+NoConn ~ 5850 1450
+NoConn ~ 5900 1450
+NoConn ~ 5800 2550
+NoConn ~ 5850 2550
+NoConn ~ 5900 2550
+NoConn ~ 5950 2550
+Wire Wire Line
+	6450 2050 6500 2050
+Wire Wire Line
+	6450 2100 6500 2100
+Wire Wire Line
+	6500 2100 6500 2050
+Connection ~ 6500 2050
+Wire Wire Line
+	6500 2050 6550 2050
+Text GLabel 6500 950  2    47   Input ~ 0
+PWR_GND
+Wire Wire Line
+	6400 950  6450 950 
+Wire Wire Line
+	6400 1000 6450 1000
+Wire Wire Line
+	6450 1000 6450 950 
+Connection ~ 6450 950 
+Wire Wire Line
+	6450 950  6500 950 
 $EndSCHEMATC
