@@ -82,12 +82,12 @@ $EndComp
 $Comp
 L Motor:Motor_DC M?
 U 1 1 5F9A1473
-P 29150 10000
-F 0 "M?" H 29308 9996 50  0000 L CNN
-F 1 "Motor_DC" H 29308 9905 50  0000 L CNN
-F 2 "" H 29150 9910 50  0001 C CNN
-F 3 "~" H 29150 9910 50  0001 C CNN
-	1    29150 10000
+P 29500 9850
+F 0 "M?" H 29658 9846 50  0000 L CNN
+F 1 "Motor_DC" H 29658 9755 50  0000 L CNN
+F 2 "" H 29500 9760 50  0001 C CNN
+F 3 "~" H 29500 9760 50  0001 C CNN
+	1    29500 9850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -145,8 +145,6 @@ Wire Wire Line
 	28400 10350 28550 10350
 Wire Wire Line
 	28400 11050 28550 11050
-Wire Wire Line
-	28400 11850 28550 11850
 Wire Wire Line
 	28400 12700 28550 12700
 Wire Wire Line
@@ -265,72 +263,6 @@ Wire Wire Line
 	20950 12450 21000 12450
 Wire Wire Line
 	21000 12450 21000 12400
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA0453E
-P 23550 10550
-F 0 "#PWR?" H 23550 10400 50  0001 C CNN
-F 1 "+24V" H 23565 10723 50  0000 C CNN
-F 2 "" H 23550 10550 50  0001 C CNN
-F 3 "" H 23550 10550 50  0001 C CNN
-	1    23550 10550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA11C95
-P 23600 11600
-F 0 "#PWR?" H 23600 11450 50  0001 C CNN
-F 1 "+24V" H 23615 11773 50  0000 C CNN
-F 2 "" H 23600 11600 50  0001 C CNN
-F 3 "" H 23600 11600 50  0001 C CNN
-	1    23600 11600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA1F45E
-P 28550 10350
-F 0 "#PWR?" H 28550 10200 50  0001 C CNN
-F 1 "+24V" V 28565 10478 50  0000 L CNN
-F 2 "" H 28550 10350 50  0001 C CNN
-F 3 "" H 28550 10350 50  0001 C CNN
-	1    28550 10350
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA54773
-P 28550 11850
-F 0 "#PWR?" H 28550 11700 50  0001 C CNN
-F 1 "+24V" V 28565 11978 50  0000 L CNN
-F 2 "" H 28550 11850 50  0001 C CNN
-F 3 "" H 28550 11850 50  0001 C CNN
-	1    28550 11850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA6150A
-P 28550 11050
-F 0 "#PWR?" H 28550 10900 50  0001 C CNN
-F 1 "+24V" V 28565 11178 50  0000 L CNN
-F 2 "" H 28550 11050 50  0001 C CNN
-F 3 "" H 28550 11050 50  0001 C CNN
-	1    28550 11050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+24V #PWR?
-U 1 1 5FA7B478
-P 28550 12700
-F 0 "#PWR?" H 28550 12550 50  0001 C CNN
-F 1 "+24V" V 28565 12828 50  0000 L CNN
-F 2 "" H 28550 12700 50  0001 C CNN
-F 3 "" H 28550 12700 50  0001 C CNN
-	1    28550 12700
-	0    1    1    0   
-$EndComp
 $Comp
 L CustomLibrary:VNH52019 U?
 U 1 1 5F98A218
@@ -664,7 +596,7 @@ Text GLabel 29400 11400 1    31   Input ~ 0
 OUTA_3
 Text GLabel 29400 12400 1    31   Input ~ 0
 OUTA_4
-Text GLabel 29150 10300 3    31   Input ~ 0
+Text GLabel 29500 10150 3    31   Input ~ 0
 OUTB_1
 Text GLabel 29700 11150 3    31   Input ~ 0
 OUTB_2
@@ -719,17 +651,6 @@ Wire Wire Line
 	23600 14100 23750 14100
 Wire Wire Line
 	23600 14000 23750 14000
-$Comp
-L power:+24V #PWR?
-U 1 1 5FAB3F52
-P 23750 14100
-F 0 "#PWR?" H 23750 13950 50  0001 C CNN
-F 1 "+24V" V 23765 14228 50  0000 L CNN
-F 2 "" H 23750 14100 50  0001 C CNN
-F 3 "" H 23750 14100 50  0001 C CNN
-	1    23750 14100
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FAB3F58
@@ -854,20 +775,9 @@ F 3 "" H 23500 15600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	23550 15400 23700 15400
+	23550 15400 23600 15400
 Wire Wire Line
 	23550 15300 23700 15300
-$Comp
-L power:+24V #PWR?
-U 1 1 5FAE49A5
-P 23700 15400
-F 0 "#PWR?" H 23700 15250 50  0001 C CNN
-F 1 "+24V" V 23715 15528 50  0000 L CNN
-F 2 "" H 23700 15400 50  0001 C CNN
-F 3 "" H 23700 15400 50  0001 C CNN
-	1    23700 15400
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5FAE49AB
@@ -992,17 +902,6 @@ Wire Wire Line
 Wire Wire Line
 	23550 16650 23700 16650
 $Comp
-L power:+24V #PWR?
-U 1 1 5FB0E61D
-P 23700 16750
-F 0 "#PWR?" H 23700 16600 50  0001 C CNN
-F 1 "+24V" V 23715 16878 50  0000 L CNN
-F 2 "" H 23700 16750 50  0001 C CNN
-F 3 "" H 23700 16750 50  0001 C CNN
-	1    23700 16750
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FB0E623
 P 22550 16750
@@ -1090,4 +989,188 @@ Text GLabel 18750 13600 0    20   Input ~ 0
 INB_7
 Text GLabel 20950 14100 2    20   Input ~ 0
 LIN_SIGNAL3
+$Comp
+L Device:Battery BT?
+U 1 1 5FAB2849
+P 27700 13850
+F 0 "BT?" V 27455 13850 50  0000 C CNN
+F 1 "True_Spec_Battery1" V 27546 13850 50  0000 C CNN
+F 2 "Custom Footprints:AMASS_XT60-M_1x02_P7.20mm_Vertical" V 27700 13910 50  0001 C CNN
+F 3 "~" V 27700 13910 50  0001 C CNN
+	1    27700 13850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	27100 13850 27500 13850
+$Comp
+L Switch:SW_DPST SW?
+U 1 1 5FAE1003
+P 28700 14150
+F 0 "SW?" H 28700 14475 50  0000 C CNN
+F 1 "SW_DPST" H 28700 14384 50  0000 C CNN
+F 2 "" H 28700 14150 50  0001 C CNN
+F 3 "~" H 28700 14150 50  0001 C CNN
+	1    28700 14150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT?
+U 1 1 5FAE3A8B
+P 27700 14250
+F 0 "BT?" V 27455 14250 50  0000 C CNN
+F 1 "True_Spec_Battery2" V 27546 14250 50  0000 C CNN
+F 2 "Custom Footprints:AMASS_XT60-M_1x02_P7.20mm_Vertical" V 27700 14310 50  0001 C CNN
+F 3 "~" V 27700 14310 50  0001 C CNN
+	1    27700 14250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	28500 14050 28500 13850
+Wire Wire Line
+	28500 13850 27900 13850
+Wire Wire Line
+	27900 14250 28500 14250
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FB2FAFE
+P 29450 13850
+F 0 "J?" H 29530 13842 50  0000 L CNN
+F 1 "WattMeter1_Input" H 29530 13751 50  0000 L CNN
+F 2 "" H 29450 13850 50  0001 C CNN
+F 3 "~" H 29450 13850 50  0001 C CNN
+	1    29450 13850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FB317E9
+P 29450 14300
+F 0 "J?" H 29530 14292 50  0000 L CNN
+F 1 "WattMeter2_Input" H 29530 14201 50  0000 L CNN
+F 2 "" H 29450 14300 50  0001 C CNN
+F 3 "~" H 29450 14300 50  0001 C CNN
+	1    29450 14300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28900 14050 29050 14050
+Wire Wire Line
+	29050 14050 29050 13850
+Wire Wire Line
+	29050 13850 29250 13850
+Wire Wire Line
+	28900 14250 29100 14250
+Wire Wire Line
+	29100 14250 29100 14300
+Wire Wire Line
+	29100 14300 29250 14300
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FB3EFCF
+P 27200 14900
+F 0 "J?" H 27118 14575 50  0000 C CNN
+F 1 "WattMeter1_Output" H 27118 14666 50  0000 C CNN
+F 2 "" H 27200 14900 50  0001 C CNN
+F 3 "~" H 27200 14900 50  0001 C CNN
+	1    27200 14900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FB4014F
+P 27200 15350
+F 0 "J?" H 27118 15025 50  0000 C CNN
+F 1 "WattMeter2_Output" H 27118 15116 50  0000 C CNN
+F 2 "" H 27200 15350 50  0001 C CNN
+F 3 "~" H 27200 15350 50  0001 C CNN
+	1    27200 15350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	27500 14250 27100 14250
+Text GLabel 27100 14250 0    39   Input ~ 0
+Common_Ground
+Text GLabel 27100 13850 0    39   Input ~ 0
+Common_Ground
+Text GLabel 29250 14400 0    20   Input ~ 0
+Common_Ground
+Text GLabel 27400 15350 2    20   Input ~ 0
+Common_Ground
+Text GLabel 27400 14900 2    20   Input ~ 0
+Common_Ground
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5FB615C9
+P 29150 14800
+F 0 "J?" H 29230 14792 50  0000 L CNN
+F 1 "Intel_Buck_Converter_Input" H 29230 14701 50  0000 L CNN
+F 2 "" H 29150 14800 50  0001 C CNN
+F 3 "~" H 29150 14800 50  0001 C CNN
+	1    29150 14800
+	1    0    0    -1  
+$EndComp
+Text GLabel 28950 14900 0    20   Input ~ 0
+Common_Ground
+Text GLabel 27400 14800 2    20   Input ~ 0
+Battery1_Positive24V
+Text GLabel 27400 15250 2    20   Input ~ 0
+Battery2_Positive24V
+Wire Wire Line
+	28950 14800 28950 14700
+Wire Wire Line
+	28950 14700 28850 14700
+Wire Wire Line
+	28850 14700 28850 14750
+Wire Wire Line
+	28850 14750 28750 14750
+Wire Wire Line
+	28850 14700 28850 14650
+Wire Wire Line
+	28850 14650 28750 14650
+Connection ~ 28850 14700
+Text GLabel 28750 14650 0    39   Input ~ 0
+Battery1_Positive
+Text GLabel 28750 14750 0    39   Input ~ 0
+Battery2_Positive
+Text GLabel 28550 12700 2    39   Input ~ 0
+Battery1_Positive24V
+Wire Wire Line
+	28400 11850 28550 11850
+Text GLabel 28550 11850 2    39   Input ~ 0
+Battery1_Positive24V
+Text GLabel 28550 11050 2    39   Input ~ 0
+Battery2_Positive24V
+Text GLabel 23600 11600 2    39   Input ~ 0
+Battery1_Positive24V
+Text GLabel 23550 10550 2    39   Input ~ 0
+Battery2_Positive24V
+Text GLabel 28550 10350 2    39   Input ~ 0
+Battery2_Positive24V
+Text GLabel 29500 9650 1    31   Input ~ 0
+OUTA_1
+Text GLabel 23750 14100 2    39   Input ~ 0
+Battery1_Positive24V
+Text GLabel 23700 15500 2    39   Input ~ 0
+Battery1_Positive24V
+Text GLabel 23700 16750 2    39   Input ~ 0
+Battery2_Positive24V
+Text GLabel 29250 13950 0    20   Input ~ 0
+Common_Ground
+Text GLabel 23700 15400 2    39   Input ~ 0
+Battery2_Positive24V
+Wire Wire Line
+	23600 15400 23600 15500
+Wire Wire Line
+	23600 15500 23700 15500
+Connection ~ 23600 15400
+Wire Wire Line
+	23600 15400 23700 15400
+Wire Notes Line
+	21750 13000 21750 17300
+Wire Notes Line
+	21750 17300 25500 17300
+Wire Notes Line
+	25500 17300 25500 13000
+Wire Notes Line
+	25500 13000 21750 13000
 $EndSCHEMATC
