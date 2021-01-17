@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/jamesfesik/Documents/Aggregator-Schematics/Overall Schematics/Overall Schematics.sch")
-    (date "Thursday, January 14, 2021 at 03:32:37 PM")
+    (date "Thursday, January 14, 2021 at 03:33:35 PM")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
