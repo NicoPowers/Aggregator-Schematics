@@ -444,19 +444,19 @@ Text GLabel 20950 13500 2    31   Input ~ 0
 SLEEP_2
 Text GLabel 20950 13600 2    31   Input ~ 0
 RESET_2
-Text GLabel 20950 13700 2    31   Input ~ 0
+Text GLabel 20950 13900 2    31   Input ~ 0
 INA_1
 Text GLabel 20950 13800 2    31   Input ~ 0
 PWM_1
-Text GLabel 20950 13900 2    31   Input ~ 0
+Text GLabel 20950 13700 2    31   Input ~ 0
 INB_1
-Text GLabel 18750 13900 0    31   Input ~ 0
-INA_2
-Text GLabel 20950 14200 2    31   Input ~ 0
-PWM_2
-Text GLabel 20950 14300 2    31   Input ~ 0
-INB_2
 Text GLabel 20950 14400 2    31   Input ~ 0
+INA_2
+Text GLabel 20950 14300 2    31   Input ~ 0
+PWM_2
+Text GLabel 20950 14200 2    31   Input ~ 0
+INB_2
+Text GLabel 18750 13900 0    31   Input ~ 0
 INA_3
 Text GLabel 20950 14600 2    31   Input ~ 0
 INB_3
@@ -968,11 +968,11 @@ Wire Wire Line
 	24700 16150 24700 16300
 Text GLabel 24400 16650 0    20   Input ~ 0
 LIN_SIGNAL3
-Text GLabel 18750 13700 0    20   Input ~ 0
+Text GLabel 18750 12900 0    20   Input ~ 0
 INA_7
-Text GLabel 18750 13800 0    20   Input ~ 0
+Text GLabel 18750 13000 0    20   Input ~ 0
 PWM_7
-Text GLabel 18750 13600 0    20   Input ~ 0
+Text GLabel 18750 13100 0    20   Input ~ 0
 INB_7
 Text GLabel 20950 14100 2    20   Input ~ 0
 LIN_SIGNAL3
@@ -1075,16 +1075,6 @@ F 3 "~" H 27200 15350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	27500 14250 27100 14250
-Text GLabel 27100 14250 0    39   Input ~ 0
-Common_Ground
-Text GLabel 27100 13850 0    39   Input ~ 0
-Common_Ground
-Text GLabel 29250 14400 0    20   Input ~ 0
-Common_Ground
-Text GLabel 27400 15350 2    20   Input ~ 0
-Common_Ground
-Text GLabel 27400 14900 2    20   Input ~ 0
-Common_Ground
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 5FB615C9
@@ -1096,8 +1086,6 @@ F 3 "~" H 29150 14800 50  0001 C CNN
 	1    29150 14800
 	1    0    0    -1  
 $EndComp
-Text GLabel 28950 14900 0    20   Input ~ 0
-Common_Ground
 Text GLabel 27400 14800 2    20   Input ~ 0
 Battery1_Positive24V
 Text GLabel 27400 15250 2    20   Input ~ 0
@@ -1141,8 +1129,6 @@ Text GLabel 23700 15500 2    39   Input ~ 0
 Battery1_Positive24V
 Text GLabel 23700 16750 2    39   Input ~ 0
 Battery2_Positive24V
-Text GLabel 29250 13950 0    20   Input ~ 0
-Common_Ground
 Text GLabel 23700 15400 2    39   Input ~ 0
 Battery2_Positive24V
 Wire Wire Line
@@ -1171,4 +1157,43 @@ F 3 "~" H 29500 9760 50  0001 C CNN
 	1    29500 9850
 	1    0    0    -1  
 $EndComp
+NoConn ~ 20950 15150
+NoConn ~ 20950 15250
+NoConn ~ 20950 15350
+NoConn ~ 20950 15450
+NoConn ~ 20950 15550
+NoConn ~ 20950 15650
+NoConn ~ 20150 16050
+NoConn ~ 20000 16050
+NoConn ~ 19850 16050
+NoConn ~ 19700 16050
+NoConn ~ 19550 16050
+NoConn ~ 18750 15750
+NoConn ~ 18750 15650
+NoConn ~ 18750 15550
+NoConn ~ 18750 15450
+NoConn ~ 18750 15350
+NoConn ~ 18750 15200
+NoConn ~ 18750 15100
+Text GLabel 27100 13850 0    50   Input ~ 0
+PWR_GND
+Text GLabel 27100 14250 0    50   Input ~ 0
+PWR_GND
+Text GLabel 29150 13700 1    50   Input ~ 0
+PWR_GND
+Wire Wire Line
+	29250 13950 29150 13950
+Wire Wire Line
+	29150 13950 29150 13700
+Wire Wire Line
+	29150 13950 29150 14400
+Wire Wire Line
+	29150 14400 29250 14400
+Connection ~ 29150 13950
+Text GLabel 28950 14900 0    50   Input ~ 0
+PWR_GND
+Text GLabel 27400 14900 2    50   Input ~ 0
+PWR_GND
+Text GLabel 27400 15350 2    50   Input ~ 0
+PWR_GND
 $EndSCHEMATC
