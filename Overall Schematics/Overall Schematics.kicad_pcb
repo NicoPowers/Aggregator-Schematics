@@ -1390,7 +1390,7 @@
   )
 
   (module "Custom Footprints:StepperMotorDriver" (layer F.Cu) (tedit 6000AA93) (tstamp 6004C519)
-    (at 56.388 14.732)
+    (at 55.88 17.526)
     (path /5F98ED02)
     (fp_text reference U2 (at 0 -4.58) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
