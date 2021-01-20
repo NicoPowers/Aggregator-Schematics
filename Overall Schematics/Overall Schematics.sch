@@ -592,17 +592,7 @@ OUTB_3
 Text GLabel 29400 12900 3    31   Input ~ 0
 OUTB_4
 Wire Notes Line
-	22000 10050 22000 12650
-Wire Notes Line
 	22000 12650 25950 12650
-Wire Notes Line
-	25950 12650 25950 9950
-Wire Notes Line
-	25950 9950 22000 9950
-Wire Notes Line
-	22000 9950 22000 10000
-Text Notes 23600 9900 0    50   ~ 0
-Stepper Motors
 Wire Wire Line
 	24850 14350 24800 14350
 Wire Wire Line
@@ -1141,8 +1131,6 @@ Wire Wire Line
 Wire Notes Line
 	21750 13000 21750 17300
 Wire Notes Line
-	21750 17300 25500 17300
-Wire Notes Line
 	25500 17300 25500 13000
 Wire Notes Line
 	25500 13000 21750 13000
@@ -1196,4 +1184,187 @@ Text GLabel 27400 14900 2    50   Input ~ 0
 PWR_GND
 Text GLabel 27400 15350 2    50   Input ~ 0
 PWR_GND
+Wire Notes Line
+	21750 17300 25500 17300
+$Comp
+L CustomLibrary:36v4SMD U?
+U 1 1 6009DFB5
+P 23000 9200
+F 0 "U?" H 23000 9263 50  0000 C CNN
+F 1 "36v4SMD" H 23000 9172 50  0000 C CNN
+F 2 "" H 23000 9200 50  0001 C CNN
+F 3 "" H 23000 9200 50  0001 C CNN
+	1    23000 9200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 22500 9350
+NoConn ~ 22500 9400
+NoConn ~ 22500 9600
+NoConn ~ 22500 9650
+NoConn ~ 22500 9700
+NoConn ~ 22500 9750
+NoConn ~ 22500 9900
+NoConn ~ 22850 10100
+NoConn ~ 22900 10100
+NoConn ~ 22950 10100
+NoConn ~ 23000 10100
+$Comp
+L power:GND #PWR?
+U 1 1 600BE28C
+P 22350 9450
+F 0 "#PWR?" H 22350 9200 50  0001 C CNN
+F 1 "GND" V 22355 9322 50  0000 R CNN
+F 2 "" H 22350 9450 50  0001 C CNN
+F 3 "" H 22350 9450 50  0001 C CNN
+	1    22350 9450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	22350 9450 22500 9450
+Text GLabel 22500 9500 0    20   Input ~ 0
+STEP_3
+Text GLabel 22500 9550 0    20   Input ~ 0
+DIR_3
+Text GLabel 22500 9800 0    20   Input ~ 0
+SLEEP_3
+Text GLabel 22500 9850 0    20   Input ~ 0
+RESET_3
+$Comp
+L Motor:Stepper_Motor_bipolar M?
+U 1 1 600C6332
+P 24450 9650
+F 0 "M?" H 24638 9774 50  0000 L CNN
+F 1 "Stepper_Motor_bipolar" H 24638 9683 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 24460 9640 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 24460 9640 50  0001 C CNN
+	1    24450 9650
+	1    0    0    -1  
+$EndComp
+Text GLabel 24150 9550 0    31   Input ~ 0
+BOUT1_3
+Text GLabel 24150 9750 0    31   Input ~ 0
+BOUT2_3
+Text GLabel 24350 9350 1    31   Input ~ 0
+AOUT1_3
+Text GLabel 24550 9350 1    31   Input ~ 0
+AOUT2_3
+Wire Wire Line
+	23500 9550 23600 9550
+Wire Wire Line
+	23600 9550 23600 9500
+Wire Wire Line
+	23500 9500 23600 9500
+Connection ~ 23600 9500
+Wire Wire Line
+	23600 9500 23600 9450
+Text GLabel 23600 9450 2    20   Input ~ 0
+Battery2_Positive24V
+Text GLabel 23600 9600 2    20   Input ~ 0
+PWR_GND
+Wire Wire Line
+	23500 9650 23550 9650
+Wire Wire Line
+	23550 9650 23550 9600
+Wire Wire Line
+	23500 9600 23550 9600
+Connection ~ 23550 9600
+Wire Wire Line
+	23550 9600 23600 9600
+Text GLabel 23500 9700 2    20   Input ~ 0
+AOUT1_3
+Text GLabel 23500 9750 2    20   Input ~ 0
+AOUT2_3
+Text GLabel 23500 9800 2    20   Input ~ 0
+BOUT1_3
+Text GLabel 23500 9850 2    20   Input ~ 0
+BOUT2_3
+Wire Notes Line
+	25950 8700 22000 8700
+Wire Notes Line
+	25950 8700 25950 12650
+Wire Notes Line
+	22000 8700 22000 12650
+Wire Notes Line
+	26450 13200 30300 13200
+Wire Notes Line
+	30300 9250 26450 9250
+Wire Notes Line
+	26450 15450 30300 15450
+Wire Notes Line
+	26450 9250 26450 15450
+Wire Notes Line
+	30300 9250 30300 15450
+Text GLabel 18750 13800 0    20   Input ~ 0
+RESET_3
+Text GLabel 18750 13700 0    20   Input ~ 0
+SLEEP_3
+Text GLabel 18750 13600 0    20   Input ~ 0
+DIR_3
+Text GLabel 18750 13500 0    20   Input ~ 0
+STEP_3
+$Comp
+L CustomLibrary:ServoDriver U?
+U 1 1 6010875A
+P 19450 10500
+F 0 "U?" H 19475 10543 20  0000 C CNN
+F 1 "ServoDriver" H 19475 10500 20  0000 C CNN
+F 2 "" H 19450 10600 20  0001 C CNN
+F 3 "" H 19450 10600 20  0001 C CNN
+	1    19450 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M?
+U 1 1 601479AE
+P 20450 10700
+F 0 "M?" H 20782 10765 50  0000 L CNN
+F 1 "Motor_Servo" H 20782 10674 50  0000 L CNN
+F 2 "" H 20450 10510 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 10510 50  0001 C CNN
+	1    20450 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 10600 20150 10600
+Wire Wire Line
+	19650 11050 19650 11100
+Wire Wire Line
+	19650 11100 20050 11100
+Wire Wire Line
+	20050 11100 20050 10700
+Wire Wire Line
+	20050 10700 20150 10700
+Wire Wire Line
+	19150 10900 19100 10900
+Wire Wire Line
+	19100 10900 19100 11150
+Wire Wire Line
+	19100 11150 20100 11150
+Wire Wire Line
+	20100 11150 20100 10800
+Wire Wire Line
+	20100 10800 20150 10800
+NoConn ~ 19800 10650
+NoConn ~ 19800 10700
+NoConn ~ 19800 10750
+NoConn ~ 19800 10800
+NoConn ~ 19800 10850
+NoConn ~ 19600 11050
+NoConn ~ 19550 11050
+NoConn ~ 19500 11050
+NoConn ~ 19450 11050
+NoConn ~ 19400 11050
+NoConn ~ 19150 10850
+NoConn ~ 19150 10800
+NoConn ~ 19150 10750
+NoConn ~ 19150 10700
+NoConn ~ 19150 10650
+Wire Notes Line
+	18900 10250 21300 10250
+Wire Notes Line
+	21300 10250 21300 11250
+Wire Notes Line
+	21300 11250 18900 11250
+Wire Notes Line
+	18900 11250 18900 10250
 $EndSCHEMATC
