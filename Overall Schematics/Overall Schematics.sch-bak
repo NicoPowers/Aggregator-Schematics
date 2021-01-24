@@ -710,11 +710,11 @@ Text GLabel 24450 14000 0    20   Input ~ 0
 LIN_SIGNAL1
 Text GLabel 18750 14300 0    20   Input ~ 0
 LIN_SIGNAL1
-Text GLabel 18750 14500 0    20   Input ~ 0
+Text GLabel 18750 13600 0    20   Input ~ 0
 INA_5
-Text GLabel 18750 14100 0    20   Input ~ 0
+Text GLabel 18750 13700 0    20   Input ~ 0
 PWM_5
-Text GLabel 18750 14600 0    20   Input ~ 0
+Text GLabel 18750 13800 0    20   Input ~ 0
 INB_5
 Text GLabel 20950 13100 2    31   Input ~ 0
 SLEEP_1
@@ -835,11 +835,11 @@ Wire Wire Line
 	24700 14800 24700 14950
 Text GLabel 24400 15300 0    20   Input ~ 0
 LIN_SIGNAL2
-Text GLabel 18750 14700 0    20   Input ~ 0
+Text GLabel 18750 14100 0    20   Input ~ 0
 INA_6
 Text GLabel 18750 14200 0    20   Input ~ 0
 PWM_6
-Text GLabel 18750 14800 0    20   Input ~ 0
+Text GLabel 18750 14500 0    20   Input ~ 0
 INB_6
 Text GLabel 18750 14400 0    20   Input ~ 0
 LIN_SIGNAL2
@@ -1187,12 +1187,12 @@ PWR_GND
 Wire Notes Line
 	21750 17300 25500 17300
 $Comp
-L CustomLibrary:36v4SMD U?
+L CustomLibrary:36v4SMD U12
 U 1 1 6009DFB5
 P 23000 9200
-F 0 "U?" H 23000 9263 50  0000 C CNN
+F 0 "U12" H 23000 9263 50  0000 C CNN
 F 1 "36v4SMD" H 23000 9172 50  0000 C CNN
-F 2 "" H 23000 9200 50  0001 C CNN
+F 2 "Custom Footprints:StepperMotorDriver" H 23000 9200 50  0001 C CNN
 F 3 "" H 23000 9200 50  0001 C CNN
 	1    23000 9200
 	1    0    0    -1  
@@ -1209,10 +1209,10 @@ NoConn ~ 22900 10100
 NoConn ~ 22950 10100
 NoConn ~ 23000 10100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0129
 U 1 1 600BE28C
 P 22350 9450
-F 0 "#PWR?" H 22350 9200 50  0001 C CNN
+F 0 "#PWR0129" H 22350 9200 50  0001 C CNN
 F 1 "GND" V 22355 9322 50  0000 R CNN
 F 2 "" H 22350 9450 50  0001 C CNN
 F 3 "" H 22350 9450 50  0001 C CNN
@@ -1230,10 +1230,10 @@ SLEEP_3
 Text GLabel 22500 9850 0    20   Input ~ 0
 RESET_3
 $Comp
-L Motor:Stepper_Motor_bipolar M?
+L Motor:Stepper_Motor_bipolar M11
 U 1 1 600C6332
 P 24450 9650
-F 0 "M?" H 24638 9774 50  0000 L CNN
+F 0 "M11" H 24638 9774 50  0000 L CNN
 F 1 "Stepper_Motor_bipolar" H 24638 9683 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-4_P5.08mm" H 24460 9640 50  0001 C CNN
 F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 24460 9640 50  0001 C CNN
@@ -1294,23 +1294,79 @@ Wire Notes Line
 	26450 9250 26450 15450
 Wire Notes Line
 	30300 9250 30300 15450
-Text GLabel 18750 13800 0    20   Input ~ 0
+Text GLabel 18750 13200 0    20   Input ~ 0
 RESET_3
-Text GLabel 18750 13700 0    20   Input ~ 0
+Text GLabel 18750 13300 0    20   Input ~ 0
 SLEEP_3
-Text GLabel 18750 13600 0    20   Input ~ 0
+Text GLabel 18750 13400 0    20   Input ~ 0
 DIR_3
 Text GLabel 18750 13500 0    20   Input ~ 0
 STEP_3
 $Comp
-L CustomLibrary:ServoDriver U?
+L CustomLibrary:ServoDriver U11
 U 1 1 6010875A
 P 19450 10500
-F 0 "U?" H 19475 10543 20  0000 C CNN
+F 0 "U11" H 19475 10543 20  0000 C CNN
 F 1 "ServoDriver" H 19475 10500 20  0000 C CNN
 F 2 "" H 19450 10600 20  0001 C CNN
 F 3 "" H 19450 10600 20  0001 C CNN
 	1    19450 10500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Motor:Motor_Servo M10
+U 1 1 601479AE
+P 20450 10700
+F 0 "M10" H 20782 10765 50  0000 L CNN
+F 1 "Motor_Servo" H 20782 10674 50  0000 L CNN
+F 2 "" H 20450 10510 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 10510 50  0001 C CNN
+	1    20450 10700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	19800 10600 20150 10600
+Wire Wire Line
+	19650 11050 19650 11100
+Wire Wire Line
+	19650 11100 20050 11100
+Wire Wire Line
+	20050 11100 20050 10700
+Wire Wire Line
+	20050 10700 20150 10700
+Wire Wire Line
+	19150 10900 19100 10900
+Wire Wire Line
+	19100 10900 19100 11150
+Wire Wire Line
+	19100 11150 20100 11150
+Wire Wire Line
+	20100 11150 20100 10800
+Wire Wire Line
+	20100 10800 20150 10800
+NoConn ~ 19800 10650
+NoConn ~ 19800 10700
+NoConn ~ 19800 10750
+NoConn ~ 19800 10800
+NoConn ~ 19800 10850
+NoConn ~ 19600 11050
+NoConn ~ 19550 11050
+NoConn ~ 19500 11050
+NoConn ~ 19450 11050
+NoConn ~ 19400 11050
+NoConn ~ 19150 10850
+NoConn ~ 19150 10800
+NoConn ~ 19150 10750
+NoConn ~ 19150 10700
+NoConn ~ 19150 10650
+Wire Notes Line
+	18900 10250 21300 10250
+Wire Notes Line
+	21300 10250 21300 11250
+Wire Notes Line
+	21300 11250 18900 11250
+Wire Notes Line
+	18900 11250 18900 10250
+NoConn ~ 18750 12700
+NoConn ~ 18750 12800
 $EndSCHEMATC

@@ -1,1 +1,36 @@
+8037394034444
+Custom Footprints
+AMASS_XT60-F_1x02_P7.20mm_Vertical
+AMASS female XT60, through hole, vertical, https://www.tme.eu/Document/2d152ced3b7a446066e6c419d84bb460/XT60%20SPEC.pdf
+XT60 female vertical
 0
+2
+2
+Custom Footprints
+AMASS_XT60-M_1x02_P7.20mm_Vertical
+AMASS female XT60, through hole, vertical, https://www.tme.eu/Document/2d152ced3b7a446066e6c419d84bb460/XT60%20SPEC.pdf
+XT60 female vertical
+0
+2
+2
+Custom Footprints
+DCMotorDriver
+
+
+0
+18
+14
+Custom Footprints
+StepperMotorDriver
+
+
+0
+24
+24
+Custom Footprints
+Teensy41
+
+
+0
+67
+67
