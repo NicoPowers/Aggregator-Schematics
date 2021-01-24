@@ -1207,7 +1207,7 @@
     )
   )
 
-  (module "Custom Footprints:Teensy41" (layer F.Cu) (tedit 5ED43644) (tstamp 60015E81)
+  (module "Custom Footprints:Teensy41" locked (layer F.Cu) (tedit 5ED43644) (tstamp 60015E81)
     (at 519.43 347.218 270)
     (path /5F985ED0)
     (fp_text reference U1 (at 0 -10.16 90) (layer F.SilkS)
