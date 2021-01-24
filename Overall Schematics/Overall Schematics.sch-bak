@@ -456,15 +456,15 @@ Text GLabel 20950 14300 2    31   Input ~ 0
 PWM_2
 Text GLabel 20950 14200 2    31   Input ~ 0
 INB_2
-Text GLabel 18750 13900 0    31   Input ~ 0
-INA_3
 Text GLabel 20950 14600 2    31   Input ~ 0
-INB_3
+INA_3
 Text GLabel 20950 14700 2    31   Input ~ 0
+INB_3
+Text GLabel 18750 14800 0    31   Input ~ 0
 INA_4
-Text GLabel 20950 14900 2    31   Input ~ 0
+Text GLabel 18750 14600 0    31   Input ~ 0
 PWM_4
-Text GLabel 20950 14800 2    31   Input ~ 0
+Text GLabel 18750 14700 0    31   Input ~ 0
 INB_4
 Text GLabel 22550 11700 0    20   Input ~ 0
 STEP_2
@@ -708,7 +708,7 @@ Wire Wire Line
 	24750 13500 24750 13650
 Text GLabel 24450 14000 0    20   Input ~ 0
 LIN_SIGNAL1
-Text GLabel 18750 14300 0    20   Input ~ 0
+Text GLabel 18750 14200 0    20   Input ~ 0
 LIN_SIGNAL1
 Text GLabel 18750 13600 0    20   Input ~ 0
 INA_5
@@ -835,13 +835,13 @@ Wire Wire Line
 	24700 14800 24700 14950
 Text GLabel 24400 15300 0    20   Input ~ 0
 LIN_SIGNAL2
-Text GLabel 18750 14100 0    20   Input ~ 0
+Text GLabel 18750 13900 0    20   Input ~ 0
 INA_6
-Text GLabel 18750 14200 0    20   Input ~ 0
+Text GLabel 18750 14100 0    20   Input ~ 0
 PWM_6
 Text GLabel 18750 14500 0    20   Input ~ 0
 INB_6
-Text GLabel 18750 14400 0    20   Input ~ 0
+Text GLabel 18750 14300 0    20   Input ~ 0
 LIN_SIGNAL2
 Wire Wire Line
 	24800 17000 24750 17000
@@ -964,7 +964,7 @@ Text GLabel 18750 13000 0    20   Input ~ 0
 PWM_7
 Text GLabel 18750 13100 0    20   Input ~ 0
 INB_7
-Text GLabel 20950 14100 2    20   Input ~ 0
+Text GLabel 18750 14400 0    20   Input ~ 0
 LIN_SIGNAL3
 $Comp
 L Device:Battery BT1
