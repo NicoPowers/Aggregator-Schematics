@@ -1076,7 +1076,7 @@
   )
 
   (module TerminalBlock:TerminalBlock_bornier-5_P5.08mm (layer B.Cu) (tedit 59FF03DE) (tstamp 60015D9A)
-    (at 459.74 394.97 270)
+    (at 459.74 396.24 270)
     (descr "simple 5-pin terminal block, pitch 5.08mm, revamped version of bornier5")
     (tags "terminal block bornier5")
     (path /5FAB8239)
