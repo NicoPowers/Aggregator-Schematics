@@ -708,7 +708,7 @@ Wire Wire Line
 	24750 13500 24750 13650
 Text GLabel 24450 14000 0    20   Input ~ 0
 LIN_SIGNAL1
-Text GLabel 18750 14200 0    20   Input ~ 0
+Text GLabel 18750 14300 0    20   Input ~ 0
 LIN_SIGNAL1
 Text GLabel 18750 13600 0    20   Input ~ 0
 INA_5
@@ -841,7 +841,7 @@ Text GLabel 18750 14100 0    20   Input ~ 0
 PWM_6
 Text GLabel 18750 14500 0    20   Input ~ 0
 INB_6
-Text GLabel 18750 14300 0    20   Input ~ 0
+Text GLabel 18750 14400 0    20   Input ~ 0
 LIN_SIGNAL2
 Wire Wire Line
 	24800 17000 24750 17000
@@ -964,7 +964,7 @@ Text GLabel 18750 13000 0    20   Input ~ 0
 PWM_7
 Text GLabel 18750 13100 0    20   Input ~ 0
 INB_7
-Text GLabel 18750 14400 0    20   Input ~ 0
+Text GLabel 18750 14200 0    20   Input ~ 0
 LIN_SIGNAL3
 $Comp
 L Device:Battery BT1
@@ -1319,7 +1319,7 @@ U 1 1 601479AE
 P 20450 10700
 F 0 "M10" H 20782 10765 50  0000 L CNN
 F 1 "Motor_Servo" H 20782 10674 50  0000 L CNN
-F 2 "" H 20450 10510 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 20450 10510 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 10510 50  0001 C CNN
 	1    20450 10700
 	1    0    0    -1  
