@@ -318,50 +318,17 @@ NoConn ~ 27400 12500
 NoConn ~ 27400 12550
 Wire Wire Line
 	27400 12650 26950 12650
-$Comp
-L power:+3.3V #PWR0113
-U 1 1 5FB92EE3
-P 26950 12650
-F 0 "#PWR0113" H 26950 12500 50  0001 C CNN
-F 1 "+3.3V" V 26965 12778 50  0000 L CNN
-F 2 "" H 26950 12650 50  0001 C CNN
-F 3 "" H 26950 12650 50  0001 C CNN
-	1    26950 12650
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 27400 12800
 NoConn ~ 27400 12750
 NoConn ~ 27400 11950
 NoConn ~ 27400 11900
 Wire Wire Line
 	27400 11800 26950 11800
-$Comp
-L power:+3.3V #PWR0114
-U 1 1 5FBBE25C
-P 26950 11800
-F 0 "#PWR0114" H 26950 11650 50  0001 C CNN
-F 1 "+3.3V" V 26965 11928 50  0000 L CNN
-F 2 "" H 26950 11800 50  0001 C CNN
-F 3 "" H 26950 11800 50  0001 C CNN
-	1    26950 11800
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 27400 11700
 NoConn ~ 27400 11650
 NoConn ~ 27400 11550
 Wire Wire Line
 	27400 11000 26950 11000
-$Comp
-L power:+3.3V #PWR0115
-U 1 1 5FBE8F2B
-P 26950 11000
-F 0 "#PWR0115" H 26950 10850 50  0001 C CNN
-F 1 "+3.3V" V 26965 11128 50  0000 L CNN
-F 2 "" H 26950 11000 50  0001 C CNN
-F 3 "" H 26950 11000 50  0001 C CNN
-	1    26950 11000
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 27400 10850
 NoConn ~ 27400 11100
 NoConn ~ 27400 11150
@@ -372,17 +339,6 @@ NoConn ~ 27400 10900
 NoConn ~ 27400 10200
 Wire Wire Line
 	27400 10300 26950 10300
-$Comp
-L power:+3.3V #PWR0116
-U 1 1 5FC56265
-P 26950 10300
-F 0 "#PWR0116" H 26950 10150 50  0001 C CNN
-F 1 "+3.3V" V 26965 10428 50  0000 L CNN
-F 2 "" H 26950 10300 50  0001 C CNN
-F 3 "" H 26950 10300 50  0001 C CNN
-	1    26950 10300
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 27400 10400
 NoConn ~ 27400 10450
 NoConn ~ 22500 10700
@@ -633,17 +589,6 @@ NoConn ~ 22600 13900
 NoConn ~ 22600 13950
 Wire Wire Line
 	22600 14050 22150 14050
-$Comp
-L power:+3.3V #PWR0118
-U 1 1 5FAB3F63
-P 22150 14050
-F 0 "#PWR0118" H 22150 13900 50  0001 C CNN
-F 1 "+3.3V" V 22165 14178 50  0000 L CNN
-F 2 "" H 22150 14050 50  0001 C CNN
-F 3 "" H 22150 14050 50  0001 C CNN
-	1    22150 14050
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 22600 14200
 NoConn ~ 22600 14150
 Text GLabel 22600 13750 0    20   Input ~ 0
@@ -760,17 +705,6 @@ NoConn ~ 22550 15200
 NoConn ~ 22550 15250
 Wire Wire Line
 	22550 15350 22100 15350
-$Comp
-L power:+3.3V #PWR0122
-U 1 1 5FAE49B6
-P 22100 15350
-F 0 "#PWR0122" H 22100 15200 50  0001 C CNN
-F 1 "+3.3V" V 22115 15478 50  0000 L CNN
-F 2 "" H 22100 15350 50  0001 C CNN
-F 3 "" H 22100 15350 50  0001 C CNN
-	1    22100 15350
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 22550 15500
 NoConn ~ 22550 15450
 Text GLabel 22550 15050 0    20   Input ~ 0
@@ -883,17 +817,6 @@ NoConn ~ 22550 16550
 NoConn ~ 22550 16600
 Wire Wire Line
 	22550 16700 22100 16700
-$Comp
-L power:+3.3V #PWR0126
-U 1 1 5FB0E62E
-P 22100 16700
-F 0 "#PWR0126" H 22100 16550 50  0001 C CNN
-F 1 "+3.3V" V 22115 16828 50  0000 L CNN
-F 2 "" H 22100 16700 50  0001 C CNN
-F 3 "" H 22100 16700 50  0001 C CNN
-	1    22100 16700
-	0    -1   -1   0   
-$EndComp
 NoConn ~ 22550 16850
 NoConn ~ 22550 16800
 Text GLabel 22550 16400 0    20   Input ~ 0
@@ -1055,21 +978,21 @@ Battery1_Positive24V
 Text GLabel 27400 15250 2    20   Input ~ 0
 Battery2_Positive24V
 Text GLabel 28550 12700 2    39   Input ~ 0
-Battery2_Positive24V
+Battery_Shared_Output
 Wire Wire Line
 	28400 11850 28550 11850
 Text GLabel 28550 11850 2    39   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 Text GLabel 23600 11600 2    39   Input ~ 0
-Battery2_Positive24V
+Battery_Shared_Output
 Text GLabel 29500 9650 1    31   Input ~ 0
 OUTA_1
 Text GLabel 23750 14100 2    39   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 Text GLabel 23700 15500 2    39   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 Text GLabel 23700 16750 2    39   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 Wire Wire Line
 	23600 15400 23600 15500
 Wire Wire Line
@@ -1204,7 +1127,7 @@ Connection ~ 23600 9500
 Wire Wire Line
 	23600 9500 23600 9450
 Text GLabel 23600 9450 2    20   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 Text GLabel 23600 9600 2    20   Input ~ 0
 PWR_GND
 Wire Wire Line
@@ -1254,7 +1177,7 @@ U 1 1 601479AE
 P 20450 10700
 F 0 "M10" H 20782 10765 50  0000 L CNN
 F 1 "Motor_Servo" H 20782 10674 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 20450 10510 50  0001 C CNN
+F 2 "Custom Footprints:TerminalBlock_2.54_1x03_P2.54mm_Horizontal" H 20450 10510 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 10510 50  0001 C CNN
 	1    20450 10700
 	1    0    0    -1  
@@ -1335,7 +1258,7 @@ U 1 1 6020790C
 P 20450 11350
 F 0 "M12" H 20782 11415 50  0000 L CNN
 F 1 "Motor_Servo" H 20782 11324 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 20450 11160 50  0001 C CNN
+F 2 "Custom Footprints:TerminalBlock_2.54_1x03_P2.54mm_Horizontal" H 20450 11160 50  0001 C CNN
 F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 11160 50  0001 C CNN
 	1    20450 11350
 	1    0    0    -1  
@@ -1433,7 +1356,7 @@ F 3 "" H 27500 16250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 27500 16150 2    20   Input ~ 0
-Battery1_Positive24V
+Battery_Shared_Output
 $Comp
 L power:+5V #PWR04
 U 1 1 602A1733
@@ -1448,22 +1371,104 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0105
 U 1 1 602D660B
-P 21250 12800
-F 0 "#PWR0105" H 21250 12650 50  0001 C CNN
-F 1 "+3V3" H 21265 12973 50  0000 C CNN
-F 2 "" H 21250 12800 50  0001 C CNN
-F 3 "" H 21250 12800 50  0001 C CNN
-	1    21250 12800
-	0    1    1    0   
+P 21500 12800
+F 0 "#PWR0105" H 21500 12650 50  0001 C CNN
+F 1 "+3V3" H 21515 12973 50  0000 C CNN
+F 2 "" H 21500 12800 50  0001 C CNN
+F 3 "" H 21500 12800 50  0001 C CNN
+	1    21500 12800
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	20950 12800 21250 12800
 Text GLabel 28750 14750 0    20   Input ~ 0
-Battery2_Positive24V
+Battery_Shared_Output
 Text GLabel 28550 11050 2    39   Input ~ 0
-Battery2_Positive24V
+Battery_Shared_Output
 Text GLabel 28550 10350 2    39   Input ~ 0
-Battery2_Positive24V
+Battery_Shared_Output
 Text GLabel 23550 10550 2    39   Input ~ 0
+Battery_Shared_Output
+Text GLabel 29000 15200 2    50   Input ~ 0
+Battery_Shared_Output
+Wire Wire Line
+	29000 15200 28700 15200
+Wire Wire Line
+	28700 15200 28700 15100
+Wire Wire Line
+	28700 15100 28400 15100
+Wire Wire Line
+	28700 15200 28700 15300
+Wire Wire Line
+	28700 15300 28400 15300
+Connection ~ 28700 15200
+Text GLabel 28400 15100 0    20   Input ~ 0
+Battery1_Positive24V
+Text GLabel 28400 15300 0    20   Input ~ 0
 Battery2_Positive24V
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 601D065D
+P 26650 16750
+F 0 "H1" H 26750 16796 50  0000 L CNN
+F 1 "MountingHole" H 26750 16705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 26650 16750 50  0001 C CNN
+F 3 "~" H 26650 16750 50  0001 C CNN
+	1    26650 16750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 601D19D9
+P 26650 17050
+F 0 "H2" H 26750 17096 50  0000 L CNN
+F 1 "MountingHole" H 26750 17005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 26650 17050 50  0001 C CNN
+F 3 "~" H 26650 17050 50  0001 C CNN
+	1    26650 17050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 601D7CC2
+P 27700 16750
+F 0 "H3" H 27800 16796 50  0000 L CNN
+F 1 "MountingHole" H 27800 16705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 27700 16750 50  0001 C CNN
+F 3 "~" H 27700 16750 50  0001 C CNN
+	1    27700 16750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 601D7CC8
+P 27700 17050
+F 0 "H4" H 27800 17096 50  0000 L CNN
+F 1 "MountingHole" H 27800 17005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 27700 17050 50  0001 C CNN
+F 3 "~" H 27700 17050 50  0001 C CNN
+	1    27700 17050
+	1    0    0    -1  
+$EndComp
+Text GLabel 18500 14000 0    50   Input ~ 0
+3.3V
+Text GLabel 21600 12800 2    50   Input ~ 0
+3.3V
+Wire Wire Line
+	20950 12800 21500 12800
+Wire Wire Line
+	21500 12800 21600 12800
+Connection ~ 21500 12800
+Text GLabel 22150 14050 0    50   Input ~ 0
+3.3V
+Text GLabel 22100 15350 0    50   Input ~ 0
+3.3V
+Text GLabel 22100 16700 0    50   Input ~ 0
+3.3V
+Text GLabel 26950 12650 0    50   Input ~ 0
+3.3V
+Text GLabel 26950 11800 0    50   Input ~ 0
+3.3V
+Text GLabel 26950 11000 0    50   Input ~ 0
+3.3V
+Text GLabel 26950 10300 0    50   Input ~ 0
+3.3V
 $EndSCHEMATC
