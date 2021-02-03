@@ -972,7 +972,7 @@ U 1 1 5FAB2849
 P 27700 13850
 F 0 "BT1" V 27455 13850 50  0000 C CNN
 F 1 "True_Spec_Battery1" V 27546 13850 50  0000 C CNN
-F 2 "Custom Footprints:AMASS_XT60-F_1x02_P7.20mm_Vertical" V 27700 13910 50  0001 C CNN
+F 2 "" V 27700 13910 50  0001 C CNN
 F 3 "~" V 27700 13910 50  0001 C CNN
 	1    27700 13850
 	0    1    1    0   
@@ -985,7 +985,7 @@ U 1 1 5FAE1003
 P 28700 14150
 F 0 "SW1" H 28700 14475 50  0000 C CNN
 F 1 "SW_DPST" H 28700 14384 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_MEC_5GSH9" H 28700 14150 50  0001 C CNN
+F 2 "" H 28700 14150 50  0001 C CNN
 F 3 "~" H 28700 14150 50  0001 C CNN
 	1    28700 14150
 	1    0    0    -1  
@@ -996,7 +996,7 @@ U 1 1 5FAE3A8B
 P 27700 14250
 F 0 "BT2" V 27455 14250 50  0000 C CNN
 F 1 "True_Spec_Battery2" V 27546 14250 50  0000 C CNN
-F 2 "Custom Footprints:AMASS_XT60-F_1x02_P7.20mm_Vertical" V 27700 14310 50  0001 C CNN
+F 2 "" V 27700 14310 50  0001 C CNN
 F 3 "~" V 27700 14310 50  0001 C CNN
 	1    27700 14250
 	0    1    1    0   
@@ -1013,7 +1013,7 @@ U 1 1 5FB2FAFE
 P 29450 13850
 F 0 "J4" H 29530 13842 50  0000 L CNN
 F 1 "WattMeter1_Input" H 29530 13751 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 29450 13850 50  0001 C CNN
+F 2 "" H 29450 13850 50  0001 C CNN
 F 3 "~" H 29450 13850 50  0001 C CNN
 	1    29450 13850
 	1    0    0    -1  
@@ -1024,7 +1024,7 @@ U 1 1 5FB317E9
 P 29450 14300
 F 0 "J5" H 29530 14292 50  0000 L CNN
 F 1 "WattMeter2_Input" H 29530 14201 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 29450 14300 50  0001 C CNN
+F 2 "" H 29450 14300 50  0001 C CNN
 F 3 "~" H 29450 14300 50  0001 C CNN
 	1    29450 14300
 	1    0    0    -1  
@@ -1035,8 +1035,6 @@ Wire Wire Line
 	29050 14050 29050 13850
 Wire Wire Line
 	29050 13850 29250 13850
-Wire Wire Line
-	28900 14250 29100 14250
 Wire Wire Line
 	29100 14250 29100 14300
 Wire Wire Line
@@ -1065,36 +1063,10 @@ F 3 "~" H 27200 15350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	27500 14250 27100 14250
-$Comp
-L Connector:Screw_Terminal_01x02 J3
-U 1 1 5FB615C9
-P 29150 14800
-F 0 "J3" H 29230 14792 50  0000 L CNN
-F 1 "Intel_Buck_Converter_Input" H 29230 14701 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 29150 14800 50  0001 C CNN
-F 3 "~" H 29150 14800 50  0001 C CNN
-	1    29150 14800
-	1    0    0    -1  
-$EndComp
 Text GLabel 27400 14800 2    20   Input ~ 0
 Battery1_Positive24V
 Text GLabel 27400 15250 2    20   Input ~ 0
 Battery2_Positive24V
-Wire Wire Line
-	28950 14800 28950 14700
-Wire Wire Line
-	28950 14700 28850 14700
-Wire Wire Line
-	28850 14700 28850 14750
-Wire Wire Line
-	28850 14750 28750 14750
-Wire Wire Line
-	28850 14700 28850 14650
-Wire Wire Line
-	28850 14650 28750 14650
-Connection ~ 28850 14700
-Text GLabel 28750 14650 0    39   Input ~ 0
-Battery1_Positive
 Text GLabel 28750 14750 0    39   Input ~ 0
 Battery2_Positive
 Text GLabel 28550 12700 2    39   Input ~ 0
@@ -1119,15 +1091,10 @@ Text GLabel 23700 15500 2    39   Input ~ 0
 Battery1_Positive24V
 Text GLabel 23700 16750 2    39   Input ~ 0
 Battery2_Positive24V
-Text GLabel 23700 15400 2    39   Input ~ 0
-Battery2_Positive24V
 Wire Wire Line
 	23600 15400 23600 15500
 Wire Wire Line
 	23600 15500 23700 15500
-Connection ~ 23600 15400
-Wire Wire Line
-	23600 15400 23700 15400
 Wire Notes Line
 	21750 13000 21750 17300
 Wire Notes Line
@@ -1303,17 +1270,6 @@ DIR_3
 Text GLabel 18750 13500 0    20   Input ~ 0
 STEP_3
 $Comp
-L CustomLibrary:ServoDriver U11
-U 1 1 6010875A
-P 19450 10500
-F 0 "U11" H 19475 10543 20  0000 C CNN
-F 1 "ServoDriver" H 19475 10500 20  0000 C CNN
-F 2 "Custom Footprints:ServoMotorDriver" H 19450 10600 20  0001 C CNN
-F 3 "" H 19450 10600 20  0001 C CNN
-	1    19450 10500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Motor:Motor_Servo M10
 U 1 1 601479AE
 P 20450 10700
@@ -1344,29 +1300,133 @@ Wire Wire Line
 	20100 11150 20100 10800
 Wire Wire Line
 	20100 10800 20150 10800
-NoConn ~ 19800 10650
 NoConn ~ 19800 10700
 NoConn ~ 19800 10750
 NoConn ~ 19800 10800
 NoConn ~ 19800 10850
-NoConn ~ 19600 11050
 NoConn ~ 19550 11050
 NoConn ~ 19500 11050
 NoConn ~ 19450 11050
 NoConn ~ 19400 11050
-NoConn ~ 19150 10850
 NoConn ~ 19150 10800
 NoConn ~ 19150 10750
 NoConn ~ 19150 10700
 NoConn ~ 19150 10650
 Wire Notes Line
 	18900 10250 21300 10250
-Wire Notes Line
-	21300 10250 21300 11250
-Wire Notes Line
-	21300 11250 18900 11250
-Wire Notes Line
-	18900 11250 18900 10250
 NoConn ~ 18750 12700
 NoConn ~ 18750 12800
+Wire Wire Line
+	28900 14250 29100 14250
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5FB615C9
+P 29150 14800
+F 0 "J3" H 29230 14792 50  0000 L CNN
+F 1 "Intel_Buck_Converter_Input" H 29230 14701 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 29150 14800 50  0001 C CNN
+F 3 "~" H 29150 14800 50  0001 C CNN
+	1    29150 14800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28750 14750 28950 14750
+Wire Wire Line
+	28950 14750 28950 14800
+Wire Notes Line
+	21300 11600 18900 11600
+Wire Notes Line
+	18900 10250 18900 11600
+Wire Notes Line
+	21300 10250 21300 11600
+$Comp
+L CustomLibrary:ServoDriver U11
+U 1 1 6010875A
+P 19450 10500
+F 0 "U11" H 19475 10543 20  0000 C CNN
+F 1 "ServoDriver" H 19475 10500 20  0000 C CNN
+F 2 "Custom Footprints:ServoMotorDriver" H 19450 10600 20  0001 C CNN
+F 3 "" H 19450 10600 20  0001 C CNN
+	1    19450 10500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_Servo M12
+U 1 1 6020790C
+P 20450 11350
+F 0 "M12" H 20782 11415 50  0000 L CNN
+F 1 "Motor_Servo" H 20782 11324 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-3_P5.08mm" H 20450 11160 50  0001 C CNN
+F 3 "http://forums.parallax.com/uploads/attachments/46831/74481.png" H 20450 11160 50  0001 C CNN
+	1    20450 11350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20150 11250 19950 11250
+Wire Wire Line
+	19950 11250 19950 10650
+Wire Wire Line
+	19150 10850 19000 10850
+Wire Wire Line
+	18950 10850 18950 11450
+Wire Wire Line
+	18950 11450 20150 11450
+Wire Wire Line
+	19600 11050 19600 11350
+Wire Wire Line
+	19600 11350 20150 11350
+Wire Wire Line
+	19600 11050 19650 11050
+Connection ~ 19600 11050
+Connection ~ 19650 11050
+Wire Wire Line
+	19150 10900 19150 10850
+Connection ~ 19150 10900
+Connection ~ 19150 10850
+$Comp
+L power:GND #PWR01
+U 1 1 602354FF
+P 19000 10600
+F 0 "#PWR01" H 19000 10350 50  0001 C CNN
+F 1 "GND" V 19005 10472 50  0000 R CNN
+F 2 "" H 19000 10600 50  0001 C CNN
+F 3 "" H 19000 10600 50  0001 C CNN
+	1    19000 10600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	19000 10600 19000 10850
+Connection ~ 19000 10850
+Wire Wire Line
+	19000 10850 18950 10850
+Text GLabel 19900 10350 2    50   Input ~ 0
+SS_1
+Text GLabel 19900 10500 2    50   Input ~ 0
+SS_2
+Wire Wire Line
+	19800 10600 19800 10350
+Wire Wire Line
+	19800 10350 19900 10350
+Connection ~ 19800 10600
+Wire Wire Line
+	19900 10500 19900 10650
+Wire Wire Line
+	19800 10650 19900 10650
+Connection ~ 19900 10650
+Wire Wire Line
+	19900 10650 19950 10650
+$Comp
+L power:+5V #PWR?
+U 1 1 60266C9B
+P 19500 11350
+F 0 "#PWR?" H 19500 11200 50  0001 C CNN
+F 1 "+5V" V 19515 11478 50  0000 L CNN
+F 2 "" H 19500 11350 50  0001 C CNN
+F 3 "" H 19500 11350 50  0001 C CNN
+	1    19500 11350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	19500 11350 19600 11350
+Connection ~ 19600 11350
 $EndSCHEMATC
