@@ -1,4 +1,4 @@
-update=2/2/2021 7:47:41 PM
+update=2/2/2021 8:29:10 PM
 version=1
 last_client=kicad
 [general]
@@ -250,8 +250,8 @@ dPairViaGap=0.25
 Name=Power
 Clearance=0.2
 TrackWidth=1
-ViaDiameter=0.8
-ViaDrill=0.4
+ViaDiameter=1.2
+ViaDrill=0.8
 uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
