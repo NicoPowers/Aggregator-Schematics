@@ -1239,24 +1239,6 @@ Wire Notes Line
 	21300 11600 18900 11600
 Wire Notes Line
 	18900 10250 18900 11600
-Wire Notes Line
-<<<<<<< HEAD
-	18900 11250 18900 10250
-NoConn ~ 18750 12700
-NoConn ~ 18750 12800
-$Comp
-L CustomLibrary:D24V22F5 U?
-U 1 1 601A932A
-P 27650 15850
-F 0 "U?" H 27683 15915 50  0000 C CNN
-F 1 "D24V22F5" H 27683 15824 50  0000 C CNN
-F 2 "Custom Footprints:D24V22F5" H 27650 15850 50  0001 C CNN
-F 3 "" H 27650 15850 50  0001 C CNN
-	1    27650 15850
-	1    0    0    -1  
-$EndComp
-=======
-	21300 10250 21300 11600
 $Comp
 L CustomLibrary:ServoDriver U11
 U 1 1 6010875A
@@ -1371,8 +1353,6 @@ F 3 "" H 27500 16250 50  0001 C CNN
 	1    27500 16250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 27500 16150 2    20   Input ~ 0
-Battery_Shared_Output
 $Comp
 L power:+5V #PWR04
 U 1 1 602A1733
@@ -1487,5 +1467,8 @@ Text GLabel 26950 11000 0    50   Input ~ 0
 3.3V
 Text GLabel 26950 10300 0    50   Input ~ 0
 3.3V
->>>>>>> 49e9262bedbd9b23d904720b18b88db150e0de5d
+Text GLabel 27500 16150 2    20   Input ~ 0
+Battery_Shared_Output
+Wire Notes Line
+	21300 11600 21300 10250
 $EndSCHEMATC
